@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative h-[80vh] flex items-center justify-center text-white pt-20">
-      
+
       {/* Imagen de fondo */}
-      <img
+      <Image
         src="/images/colegio.jpeg"
         alt="Colegio"
-        className="absolute inset-0 w-full h-full object-cover"
+        fill
+        className="object-cover"
+        priority
       />
 
       {/* Capa oscura */}
@@ -25,6 +29,7 @@ export default function Hero() {
         <a
           href="https://wa.me/573143598739"
           target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#4EB7E8] hover:bg-[#2FA8E0] px-6 py-3 rounded-xl font-semibold transition"
         >
           Contáctanos por WhatsApp

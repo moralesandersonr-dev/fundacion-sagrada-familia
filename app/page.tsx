@@ -1,27 +1,7 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
-
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
-      
-      <Navbar />
-
-      <Hero />
-
-      <About />
-
-      <Projects />
-
-      <Footer />
-
-      <WhatsAppButton />
-
+    <main>
+      <h1>VERCEL OK</h1>
     </main>
   );
 }
-  
