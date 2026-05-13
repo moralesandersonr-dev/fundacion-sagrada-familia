@@ -8,15 +8,12 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/80 shadow-sm">
-      
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-
-        {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="bg-white p-2 rounded-full shadow-md">
             <Image
               src="/images/Logo.png"
-              alt="Logo"
+              alt="Logo Fundación La Sagrada Familia"
               width={45}
               height={45}
               className="object-contain"
@@ -28,25 +25,32 @@ export default function Navbar() {
           </span>
         </div>
 
-        {/* Botones Desktop */}
         <div className="hidden md:flex gap-6 font-medium text-[#123C73]">
-          <a href="#" className="hover:text-[#2FA8E0]">Inicio</a>
-          <a href="#about" className="hover:text-[#2FA8E0]">Nosotros</a>
-          <a href="#projects" className="hover:text-[#2FA8E0]">Proyectos</a>
-          <a href="#contacto" className="hover:text-[#2FA8E0]">Contacto</a>
+          <a href="#" className="hover:text-[#2FA8E0]">
+            Inicio
+          </a>
+          <a href="#about" className="hover:text-[#2FA8E0]">
+            Nosotros
+          </a>
+          <a href="#projects" className="hover:text-[#2FA8E0]">
+            Proyectos
+          </a>
+          <a href="#contacto" className="hover:text-[#2FA8E0]">
+            Contacto
+          </a>
         </div>
 
-        {/* Botón menú móvil */}
         <button
           className="md:hidden text-[#123C73] text-2xl"
           onClick={() => setOpen(!open)}
+          aria-label={open ? "Cerrar menu" : "Abrir menu"}
+          aria-expanded={open}
+          type="button"
         >
           ☰
         </button>
-
       </div>
 
-      {/* Menú móvil */}
       {open && (
         <div className="md:hidden bg-white px-6 py-4 flex flex-col gap-4 text-[#123C73] font-medium">
           <a href="#">Inicio</a>
@@ -55,7 +59,6 @@ export default function Navbar() {
           <a href="#contacto">Contacto</a>
         </div>
       )}
-
     </nav>
   );
 }
