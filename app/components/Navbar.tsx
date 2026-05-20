@@ -1,64 +1,100 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+
+const links = [
+  { label: "Inicio", href: "/" },
+  { label: "Nosotros", href: "/#about" },
+  { label: "Proyectos", href: "/#projects" },
+  { label: "RTE", href: "/rte" },
+  { label: "Contacto", href: "/#contacto" },
+];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/80 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="bg-white p-2 rounded-full shadow-md">
+    <header className="fixed left-0 top-0 z-50 w-full px-4 pt-4">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between bg-[#F7F2E8]/92 px-4 py-3 shadow-[0_10px_35px_rgba(16,40,68,0.12)] ring-1 ring-[#102844]/10 backdrop-blur-md md:px-5">
+        <Link href="/" className="flex min-w-0 items-center gap-3">
+          <span className="grid size-10 shrink-0 place-items-center bg-white shadow-[inset_0_0_0_1px_rgba(16,40,68,0.12)]">
             <Image
               src="/images/Logo.png"
-              alt="Logo Fundación La Sagrada Familia"
-              width={45}
-              height={45}
+              alt="Logo Fundacion La Sagrada Familia"
+              width={34}
+              height={34}
               className="object-contain"
+              priority
             />
-          </div>
-
-          <span className="font-bold text-[#123C73] text-lg hidden md:block">
-            Fundación La Sagrada Familia
           </span>
+          <span className="leading-tight">
+            <span className="block text-[0.76rem] font-black uppercase tracking-[0.1em] text-[#102844] md:text-sm">
+              Fundacion La Sagrada Familia
+            </span>
+            <span className="hidden text-xs text-[#5F6F7F] md:block">
+              Formacion integral en Medellin
+            </span>
+          </span>
+        </Link>
+
+        <div className="hidden items-center gap-2 lg:flex">
+          {links.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="px-3 py-2 text-sm font-bold text-[#102844] transition hover:bg-white hover:text-[#8A6B12]"
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
 
-        <div className="hidden md:flex gap-6 font-medium text-[#123C73]">
-          <a href="#" className="hover:text-[#2FA8E0]">
-            Inicio
-          </a>
-          <a href="#about" className="hover:text-[#2FA8E0]">
-            Nosotros
-          </a>
-          <a href="#projects" className="hover:text-[#2FA8E0]">
-            Proyectos
-          </a>
-          <a href="#contacto" className="hover:text-[#2FA8E0]">
-            Contacto
-          </a>
-        </div>
+        <a
+          href="https://wa.me/573143598739"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden bg-[#102844] px-5 py-2.5 text-sm font-black text-white transition hover:bg-[#18395E] md:inline-flex"
+        >
+          Agendar visita
+        </a>
 
         <button
-          className="md:hidden text-[#123C73] text-2xl"
+          className="ml-auto px-3 py-2 text-sm font-black uppercase tracking-[0.12em] text-[#102844] lg:hidden"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Cerrar menu" : "Abrir menu"}
           aria-expanded={open}
           type="button"
         >
-          ☰
+          {open ? "Cerrar" : "Menu"}
         </button>
-      </div>
+      </nav>
 
       {open && (
-        <div className="md:hidden bg-white px-6 py-4 flex flex-col gap-4 text-[#123C73] font-medium">
-          <a href="#">Inicio</a>
-          <a href="#about">Nosotros</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+        <div className="mx-auto mt-2 max-w-7xl bg-[#F7F2E8] p-4 shadow-2xl ring-1 ring-[#102844]/10 lg:hidden">
+          <div className="grid gap-1">
+            {links.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="px-3 py-3 text-base font-black text-[#102844] hover:bg-white"
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <a
+              href="https://wa.me/573143598739"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 bg-[#102844] px-4 py-3 text-center text-sm font-black text-white"
+            >
+              Agendar visita
+            </a>
+          </div>
         </div>
       )}
-    </nav>
+    </header>
   );
 }
