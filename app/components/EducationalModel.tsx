@@ -4,11 +4,11 @@ const model = [
     text: "El aula se conecta con preguntas, proyectos y experiencias que permiten aplicar el conocimiento a la vida cotidiana.",
   },
   {
-    title: "Pensamiento critico",
-    text: "Se promueve la capacidad de interpretar, argumentar y proponer desde cada area del saber.",
+    title: "Pensamiento crítico",
+    text: "Se promueve la capacidad de interpretar, argumentar y proponer desde cada área del saber.",
   },
   {
-    title: "Acompanamiento integral",
+    title: "Acompañamiento integral",
     text: "El seguimiento considera conocimientos, actitudes, valores, habilidades y necesidades educativas.",
   },
 ];
@@ -16,7 +16,7 @@ const model = [
 const formation = [
   "Desarrollo personal",
   "Desarrollo social",
-  "Desarrollo academico",
+  "Desarrollo académico",
   "Sentido espiritual",
   "Arte y ambiente",
 ];
@@ -30,7 +30,7 @@ function LineIcon() {
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="size-6"
+      className="size-5 md:size-6"
       aria-hidden="true"
     >
       <path d="M4 19V5" />
@@ -41,46 +41,76 @@ function LineIcon() {
 
 export default function EducationalModel() {
   return (
-    <section className="border-b border-[#102844]/10 bg-[#FBF8F1] py-14 md:py-16">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 md:px-8 lg:grid-cols-[0.82fr_1.18fr]">
+    <section className="border-b border-[#7d9bcd]/10 bg-[#FBF8F1] py-10 md:py-16">
+      <div className="mx-auto grid max-w-7xl gap-8 px-5 md:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-10">
         <div>
-          <p className="text-xs font-black uppercase tracking-[0.24em] text-[#8A6B12]">
-            Modelo Holistico Transformador
+          <p className="text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#8A6B12] md:text-xs md:tracking-[0.24em]">
+            Modelo Holístico Transformador
           </p>
-          <h2 className="mt-4 max-w-2xl text-[clamp(2rem,3.5vw,3.65rem)] font-black leading-tight tracking-[-0.03em] text-[#102844]">
-            Una pedagogia que mira al estudiante completo.
+          <h2 className="mt-3 max-w-2xl text-[clamp(1.85rem,8vw,2.75rem)] font-black leading-tight tracking-[-0.03em] text-[#7d9bcd] md:mt-4 md:text-[clamp(2rem,3.5vw,3.65rem)]">
+            Una pedagogía que mira al estudiante completo.
           </h2>
-          <p className="mt-5 max-w-xl text-base leading-8 text-[#40566B]">
-            El PEI articula dimensiones personales, academicas, sociales,
-            normativas, espirituales, artisticas y ambientales para formar con
+          <p className="mt-4 max-w-xl text-sm leading-7 text-[#40566B] md:mt-5 md:text-base md:leading-8">
+            El PEI articula dimensiones personales, académicas, sociales,
+            normativas, espirituales, artísticas y ambientales para formar con
             sentido y responsabilidad.
           </p>
         </div>
 
-        <div className="grid gap-4">
-          {model.map((item, index) => (
-            <article
-              key={item.title}
-              className="grid gap-4 border-t border-[#102844]/12 py-5 md:grid-cols-[3rem_0.5fr_1fr] md:items-start"
-            >
-              <span className="text-[#8A6B12]">
-                <LineIcon />
-              </span>
-              <h3 className="text-xl font-black text-[#102844]">
-                <span className="mr-3 font-mono text-xs font-normal text-[#8A6B12]">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                {item.title}
-              </h3>
-              <p className="leading-7 text-[#5F6F7F]">{item.text}</p>
-            </article>
-          ))}
+        <div>
+          <div className="grid gap-2 md:hidden">
+            {model.map((item, index) => (
+              <details
+                key={item.title}
+                className="mobile-disclosure border-t border-[#7d9bcd]/12 py-3"
+                open={index === 0}
+              >
+                <summary className="flex cursor-pointer items-center justify-between gap-4">
+                  <span className="flex items-center gap-3">
+                    <span className="text-[#8A6B12]">
+                      <LineIcon />
+                    </span>
+                    <span className="text-base font-black text-[#7d9bcd]">
+                      <span className="mr-2 font-mono text-xs font-normal text-[#8A6B12]">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      {item.title}
+                    </span>
+                  </span>
+                  <span className="text-lg font-black text-[#8A6B12]">+</span>
+                </summary>
+                <p className="mt-3 pl-8 text-sm leading-6 text-[#5F6F7F]">
+                  {item.text}
+                </p>
+              </details>
+            ))}
+          </div>
 
-          <div className="mt-2 flex flex-wrap gap-2">
+          <div className="hidden gap-4 md:grid">
+            {model.map((item, index) => (
+              <article
+                key={item.title}
+                className="grid gap-4 border-t border-[#7d9bcd]/12 py-5 md:grid-cols-[3rem_0.5fr_1fr] md:items-start"
+              >
+                <span className="text-[#8A6B12]">
+                  <LineIcon />
+                </span>
+                <h3 className="text-xl font-black text-[#7d9bcd]">
+                  <span className="mr-3 font-mono text-xs font-normal text-[#8A6B12]">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  {item.title}
+                </h3>
+                <p className="leading-7 text-[#5F6F7F]">{item.text}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-5 flex flex-wrap gap-2 md:mt-2">
             {formation.map((item) => (
               <span
                 key={item}
-                className="border border-[#102844]/14 bg-[#F7F2E8] px-3 py-2 text-sm font-bold text-[#102844]"
+                className="border border-[#7d9bcd]/14 bg-[#F7F2E8] px-3 py-2 text-xs font-bold text-[#7d9bcd] md:text-sm"
               >
                 {item}
               </span>

@@ -2,7 +2,7 @@
 
 :root {
   --background: #f7f2e8;
-  --foreground: #102844;
+  --foreground: #7d9bcd;
 }
 
 @theme inline {
@@ -22,8 +22,8 @@ html {
 
 body {
   background:
-    linear-gradient(rgba(16, 40, 68, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 40, 68, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(125, 155, 205, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125, 155, 205, 0.03) 1px, transparent 1px),
     var(--background);
   background-size: 56px 56px, 56px 56px, auto;
   color: var(--foreground);
@@ -32,7 +32,7 @@ body {
 
 ::selection {
   background: #c59a2f;
-  color: #102844;
+  color: #7d9bcd;
 }
 
 .paper-surface {
@@ -42,7 +42,15 @@ body {
 }
 
 .quiet-rule {
-  background-image: linear-gradient(90deg, #102844 45%, transparent 0);
+  background-image: linear-gradient(90deg, #7d9bcd 45%, transparent 0);
   background-size: 10px 1px;
   background-repeat: repeat-x;
+}
+
+.mobile-disclosure summary {
+  list-style: none;
+}
+
+.mobile-disclosure summary::-webkit-details-marker {
+  display: none;
 }

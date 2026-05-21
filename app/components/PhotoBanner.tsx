@@ -8,6 +8,7 @@ type PhotoBannerProps = {
   text: string;
   title: string;
   tone?: "light" | "dark";
+  variant?: "default" | "featured";
 };
 
 export default function PhotoBanner({
@@ -18,40 +19,60 @@ export default function PhotoBanner({
   text,
   title,
   tone = "dark",
+  variant = "default",
 }: PhotoBannerProps) {
   const isDark = tone === "dark";
+  const isFeatured = variant === "featured";
 
   return (
-    <section className="relative min-h-[330px] overflow-hidden border-b border-[#102844]/10 bg-[#102844] md:min-h-[420px]">
+    <section
+      className={`group relative min-h-[260px] overflow-hidden border-b border-[#7d9bcd]/10 bg-[#7d9bcd] ${
+        isFeatured ? "md:min-h-[560px]" : "md:min-h-[420px]"
+      }`}
+    >
       <Image
         src={src}
         alt={alt}
         fill
-        className={`object-cover ${objectPosition}`}
+        className={`object-cover transition duration-[1200ms] ease-out group-hover:scale-[1.015] ${objectPosition}`}
         sizes="100vw"
       />
       <div
         className={
           isDark
-            ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(16,40,68,0.82),rgba(16,40,68,0.36),rgba(16,40,68,0.1))]"
-            : "absolute inset-0 bg-[linear-gradient(90deg,rgba(247,242,232,0.92),rgba(247,242,232,0.48),rgba(247,242,232,0.12))]"
+            ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(125,155,205,0.86),rgba(125,155,205,0.44),rgba(125,155,205,0.1))]"
+            : "absolute inset-0 bg-[linear-gradient(90deg,rgba(247,242,232,0.95),rgba(247,242,232,0.56),rgba(247,242,232,0.16))]"
         }
       />
-      <div className="relative mx-auto flex min-h-[330px] max-w-7xl items-end px-6 py-9 md:min-h-[420px] md:px-8 md:py-12">
-        <div className={isDark ? "max-w-2xl text-white" : "max-w-2xl text-[#102844]"}>
+      <div
+        className={`relative mx-auto flex min-h-[260px] max-w-7xl items-end px-5 py-7 md:px-8 md:py-12 ${
+          isFeatured ? "md:min-h-[560px]" : "md:min-h-[420px]"
+        }`}
+      >
+        <div
+          className={
+            isDark ? "max-w-2xl text-white" : "max-w-2xl text-[#7d9bcd]"
+          }
+        >
           <p
             className={
               isDark
-                ? "text-xs font-black uppercase tracking-[0.24em] text-[#D8C17C]"
-                : "text-xs font-black uppercase tracking-[0.24em] text-[#8A6B12]"
+                ? "text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#D8C17C] md:text-xs md:tracking-[0.24em]"
+                : "text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#8A6B12] md:text-xs md:tracking-[0.24em]"
             }
           >
             {kicker}
           </p>
-          <h2 className="mt-4 text-4xl font-black leading-tight tracking-[-0.03em] md:text-5xl">
+          <h2 className="mt-3 text-[clamp(1.75rem,9vw,2.55rem)] font-black leading-tight tracking-[-0.03em] md:mt-4 md:text-[clamp(2.05rem,4vw,3.25rem)]">
             {title}
           </h2>
-          <p className={isDark ? "mt-4 text-lg leading-8 text-white/86" : "mt-4 text-lg leading-8 text-[#40566B]"}>
+          <p
+            className={
+              isDark
+                ? "mt-3 text-sm leading-6 text-white/86 md:mt-4 md:text-lg md:leading-8"
+                : "mt-3 text-sm leading-6 text-[#40566B] md:mt-4 md:text-lg md:leading-8"
+            }
+          >
             {text}
           </p>
         </div>

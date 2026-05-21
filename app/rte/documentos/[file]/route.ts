@@ -19,7 +19,7 @@ export async function GET(
     decodedFile.includes("/") ||
     decodedFile.includes("\\")
   ) {
-    return new NextResponse("Documento no valido", { status: 400 });
+    return new NextResponse("Documento no válido", { status: 400 });
   }
 
   try {
