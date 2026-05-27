@@ -13,7 +13,7 @@ export default function Hero() {
         {/* Imagen de fondo derecha */}
         <div className="absolute inset-y-0 right-0 hidden w-[50%] lg:block">
           <Image
-            src="/images/colegio.jpeg"
+            src="/images/colegio.jpg"
             alt="Colegio de la Fundación La Sagrada Familia"
             fill
             priority
