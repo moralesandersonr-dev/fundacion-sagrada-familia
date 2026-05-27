@@ -11,16 +11,16 @@ export default function Hero() {
     <section className="relative overflow-hidden border-b border-[#7d9bcd]/10 bg-[#F7F2E8] pt-20 md:pt-24">
       <div className="mx-auto grid max-w-7xl gap-6 px-5 pb-9 pt-6 md:gap-7 md:px-8 md:pb-14 md:pt-10 lg:min-h-[650px] lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:pb-16 lg:pt-12">
         <div className="relative z-10">
-          <div className="mb-5 flex items-center gap-3 md:mb-7 md:gap-4">
+          <div className="mb-4 flex items-center gap-3 md:mb-6 md:gap-4">
             <span className="h-px w-8 bg-[#C59A2F] md:w-12" />
-            <p className="text-xs font-black uppercase tracking-[0.22em] text-[#8A6B12]">
-              Colegio La Sagrada Familia
-            </p>
           </div>
-
-          <h1 className="max-w-3xl text-[clamp(2.25rem,11vw,3.35rem)] font-black leading-[0.94] tracking-[-0.035em] text-[#7d9bcd] md:text-[clamp(3rem,6.8vw,6.4rem)] md:leading-[0.9]">
-            Integrar, para la vida.
+          <h1 className="max-w-3xl text-[clamp(2.8rem,11vw,4.5rem)] font-black leading-[0.94] tracking-[-0.035em] text-[#7d9bcd] md:text-[clamp(4rem,7vw,7rem)] md:leading-[0.9]">
+            Colegio La Sagrada Familia
           </h1>
+
+          <p className="mt-3 text-lg italic text-[#8A6B12] md:text-2xl">
+            Integrar para la vida
+          </p>
 
           <p className="mt-5 max-w-xl text-base leading-7 text-[#40566B] md:mt-7 md:text-xl md:leading-8">
             Una institución educativa que forma desde la dignidad, la familia,
