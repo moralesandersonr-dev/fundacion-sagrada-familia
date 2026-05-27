@@ -17,15 +17,15 @@ export default function Hero() {
             alt="Colegio de la Fundación La Sagrada Familia"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-[45%_center]"
           />
 
           {/* Degradado que une texto e imagen */}
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F7F2E8_0%,rgba(247,242,232,0.92)_12%,rgba(247,242,232,0.65)_22%,rgba(247,242,232,0.15)_35%,rgba(247,242,232,0)_50%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F7F2E8_0%,rgba(247,242,232,0.75)_8%,rgba(247,242,232,0.35)_16%,rgba(247,242,232,0.08)_24%,rgba(247,242,232,0)_32%)]" />
         </div>
 
         <div className="relative z-10 flex min-h-[720px] items-center">
-          <div className="max-w-[540px]">
+          <div className="max-w-[680px]">
             <div className="mb-6 flex items-center gap-4">
               <span className="h-px w-12 bg-[#C59A2F]" />
 
@@ -34,10 +34,10 @@ export default function Hero() {
               </p>
             </div>
 
-            <h1 className="font-[var(--font-playfair)] text-[clamp(3.5rem,5vw,6rem)] font-semibold leading-[0.92] tracking-[-0.04em] text-[#4F73B8]">
-              Colegio
+            <h1 className="font-[var(--font-playfair)] text-[clamp(2.8rem,4vw,4.8rem)] font-semibold leading-[0.92] tracking-[-0.04em] text-[#4F73B8]">
+              Colegio La
               <br />
-              La Sagrada Familia
+              Sagrada Familia
             </h1>
 
             <p className="mt-4 font-[var(--font-dancing)] text-4xl italic text-[#C59016] md:text-5xl">
