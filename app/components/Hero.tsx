@@ -14,7 +14,7 @@ export default function Hero() {
           <div className="mb-4 flex items-center gap-3 md:mb-6 md:gap-4">
             <span className="h-px w-8 bg-[#C59A2F] md:w-12" />
           </div>
-          <h1 className="max-w-3xl text-[clamp(2.8rem,11vw,4.5rem)] font-black leading-[0.94] tracking-[-0.035em] text-[#7d9bcd] md:text-[clamp(4rem,7vw,7rem)] md:leading-[0.9]">
+          <h1 className="max-w-3xl text-[clamp(2.3rem,8vw,3.8rem)] font-black leading-[0.98] tracking-[-0.03em] text-[#7d9bcd] md:text-[clamp(3.2rem,5vw,5rem)] md:leading-[0.95]">
             Colegio La Sagrada Familia
           </h1>
 
