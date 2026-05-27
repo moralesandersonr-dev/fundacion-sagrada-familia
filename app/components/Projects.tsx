@@ -41,7 +41,7 @@ export default function Projects() {
         </div>
 
         {/* Layout */}
-        <div className="mt-7 grid gap-4 md:mt-9 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="mt-7 grid gap-4 md:mt-9 lg:grid-cols-[1.35fr_0.65fr]">
           {/* Proyecto principal */}
           <article className="group relative overflow-hidden rounded-[32px] isolate">
             <div className="relative aspect-square w-full">
@@ -68,22 +68,25 @@ export default function Projects() {
           {/* Columna derecha */}
           <div className="grid gap-4">
             {/* Proyecto secundario grande */}
-            <article className="group relative min-h-[240px] overflow-hidden rounded-[28px] md:min-h-[260px]">
-              <Image
-                src="/images/vida-aros.jpeg"
-                alt="Amigos Francisco"
-                fill
-                sizes="(min-width: 1024px) 24vw, 100vw"
-                className="
-                  object-cover
-                  object-center
-                  transition
-                  duration-700
-                  ease-out
-                  group-hover:scale-[1.03]
-                  group-hover:brightness-105
-                "
-              />
+            <article className="group relative overflow-hidden rounded-[28px] isolate">
+              <div className="relative aspect-square w-full">
+                <Image
+                  src="/images/aman-la-vida.jpeg"
+                  alt="Los niños, las niñas y adolescentes aman la vida en la escuela"
+                  fill
+                  sizes="(min-width: 1024px) 26vw, 100vw"
+                  className="
+                    h-full
+                    w-full
+                    rounded-[28px]
+                    object-cover
+                    transition
+                    duration-700
+                    ease-out
+                    group-hover:scale-[1.03]
+                  "
+                />
+              </div>
             </article>
 
             {/* Grid inferior */}
