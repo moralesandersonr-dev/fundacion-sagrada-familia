@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const secondaryProjects = [
   {
-    image: "/images/comer-sagrado.jpeg",
-    alt: "Comer es acto sagrado",
+    image: "/images/Empatia-animal.jpeg",
+    alt: "Empatía animal",
   },
   {
     image: "/images/cuento-cuento.jpeg",
