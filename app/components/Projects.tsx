@@ -43,23 +43,24 @@ export default function Projects() {
         {/* Layout */}
         <div className="mt-7 grid gap-4 md:mt-9 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Proyecto principal */}
-          <article className="group relative min-h-[320px] overflow-hidden rounded-[32px] md:min-h-[520px]">
-            <Image
-              src="/images/vida-globos.jpeg"
-              alt="Escuela de líderes sociales"
-              fill
-              priority
-              sizes="(min-width: 1024px) 56vw, 100vw"
-              className="
-                object-cover
-                object-center
-                transition
-                duration-700
-                ease-out
-                group-hover:scale-[1.03]
-                group-hover:brightness-105
-              "
-            />
+          <article className="group relative overflow-hidden rounded-[32px] bg-[#6e8bb8]">
+            <div className="relative aspect-[16/9] w-full">
+              <Image
+                src="/images/vida-globos.jpeg"
+                alt="Escuela de líderes sociales"
+                fill
+                priority
+                sizes="(min-width: 1024px) 56vw, 100vw"
+                className="
+                  object-contain
+                  p-2
+                  transition
+                  duration-700
+                  ease-out
+                  group-hover:scale-[1.01]
+                "
+              />
+            </div>
           </article>
 
           {/* Columna derecha */}
