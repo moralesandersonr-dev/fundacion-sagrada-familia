@@ -14,15 +14,18 @@ export default function Hero() {
           <div className="mb-4 flex items-center gap-3 md:mb-6 md:gap-4">
             <span className="h-px w-8 bg-[#C59A2F] md:w-12" />
           </div>
-          className="max-w-none font-[var(--font-playfair)] text-[clamp(2rem,4.5vw,3.4rem)] font-bold leading-[0.95] tracking-[-0.02em] text-[#5F84C4] md:text-[clamp(2.8rem,3.6vw,4.2rem)]"
-            Colegio La Sagrada Familia
+
+          <h1 className="max-w-none font-[var(--font-playfair)] text-[clamp(2.4rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.03em] text-[#5F84C4] md:text-[clamp(3.2rem,4vw,5.2rem)]">
+            Colegio La
+            <br />
+            Sagrada Familia
           </h1>
 
-          <p className="mt-3 font-[var(--font-dancing)] italic text-2xl text-[#B8871A] md:text-3xl">
+          <p className="mt-2 font-[var(--font-dancing)] italic text-3xl text-[#B8871A] md:text-4xl">
             Integrar para la vida
           </p>
 
-          <p className="mt-5 max-w-xl text-base leading-7 text-[#40566B] md:mt-7 md:text-xl md:leading-8">
+          <p className="mt-6 max-w-xl text-base leading-7 text-[#40566B] md:mt-7 md:text-xl md:leading-8">
             Una institución educativa que forma desde la dignidad, la familia,
             el pensamiento crítico y el servicio al territorio.
           </p>
@@ -59,7 +62,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative min-h-[285px] overflow-hidden bg-[#7d9bcd] shadow-[8px_8px_0_rgba(197,154,47,0.45)] md:min-h-[500px] md:shadow-[14px_14px_0_rgba(197,154,47,0.45)]">
+        <div className="relative min-h-[285px] overflow-hidden bg-[#7d9bcd] md:min-h-[520px]">
           <Image
             src="/images/colegio.jpeg"
             alt="Colegio de la Fundación La Sagrada Familia"
@@ -67,7 +70,7 @@ export default function Hero() {
             className="object-cover object-top"
             priority
           />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(125,155,205,0.02),rgba(125,155,205,0.18))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(247,242,232,0.70)_0%,rgba(247,242,232,0.15)_18%,rgba(255,255,255,0)_40%)]" />
           <div className="absolute bottom-0 left-0 right-0 grid grid-cols-3 bg-[#7d9bcd]/88 text-white backdrop-blur-sm">
             <div className="border-r border-white/15 p-2.5 md:p-4">
               <p className="text-xl font-black md:text-2xl">2027</p>
