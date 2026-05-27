@@ -43,7 +43,7 @@ export default function Projects() {
         {/* Layout */}
         <div className="mt-7 grid gap-4 md:mt-9 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Proyecto principal */}
-          <article className="group relative overflow-hidden rounded-[32px]">
+          <article className="group relative overflow-hidden rounded-[32px] isolate">
             <div className="relative aspect-square w-full">
               <Image
                 src="/images/vida-globos.jpeg"
@@ -52,6 +52,9 @@ export default function Projects() {
                 priority
                 sizes="(min-width: 1024px) 56vw, 100vw"
                 className="
+                  h-full
+                  w-full
+                  rounded-[32px]
                   object-cover
                   transition
                   duration-700
