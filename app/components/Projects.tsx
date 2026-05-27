@@ -41,7 +41,7 @@ export default function Projects() {
         </div>
 
         {/* Layout */}
-        <div className="mt-7 grid gap-4 md:mt-9 lg:grid-cols-[1.35fr_0.65fr]">
+        <div className="mt-7 grid gap-4 md:mt-9 lg:grid-cols-[1.2fr_0.8fr]">
           {/* Proyecto principal */}
           <article className="group relative overflow-hidden rounded-[32px] isolate">
             <div className="relative aspect-square w-full">
