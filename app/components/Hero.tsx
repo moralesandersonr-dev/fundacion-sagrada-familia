@@ -11,17 +11,17 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-[#F7F2E8] pt-20 md:pt-24">
       <div className="relative mx-auto max-w-7xl px-5 md:px-8">
         {/* Imagen de fondo derecha */}
-        <div className="absolute inset-y-0 right-0 hidden w-[58%] lg:block">
+        <div className="absolute inset-y-0 right-0 hidden w-[50%] lg:block">
           <Image
             src="/images/colegio.jpeg"
             alt="Colegio de la Fundación La Sagrada Familia"
             fill
             priority
-            className="object-cover object-[30%_center]"
+            className="object-cover object-[35%_center]"
           />
 
           {/* Degradado que une texto e imagen */}
-          <div className="absolute inset-y-0 right-0 hidden w-[48%] lg:block">
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F7F2E8_0%,rgba(247,242,232,0.75)_8%,rgba(247,242,232,0.35)_16%,rgba(247,242,232,0.08)_24%,rgba(247,242,232,0)_32%)]" />
         </div>
 
         <div className="relative z-10 flex min-h-[720px] items-center">
