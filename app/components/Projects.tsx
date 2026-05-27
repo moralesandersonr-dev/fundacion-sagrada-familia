@@ -82,7 +82,6 @@ export default function Projects() {
               priority
             />
           </article>
-
             <div className="grid gap-2 md:hidden">
               {secondaryProjects.map((project, index) => (
                 <details
