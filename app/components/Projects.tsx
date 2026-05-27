@@ -6,8 +6,8 @@ const secondaryProjects = [
     alt: "Empatía animal",
   },
   {
-    image: "/images/cuento-cuento.jpeg",
-    alt: "El cuento lo cuento yo",
+    image: "/images/camino-vida.jpeg",
+    alt: "Un camino a la vida",
   },
   {
     image: "/images/uno-somos-todos.jpeg",
