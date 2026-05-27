@@ -17,11 +17,11 @@ export default function Hero() {
             alt="Colegio de la Fundación La Sagrada Familia"
             fill
             priority
-            className="object-cover object-[35%_center]"
+            className="object-cover object-[25%_center]"
           />
 
           {/* Degradado que une texto e imagen */}
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F7F2E8_0%,rgba(247,242,232,0.45)_8%,rgba(247,242,232,0.15)_15%,rgba(247,242,232,0)_22%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F7F2E8_0%,rgba(247,242,232,0.70)_10%,rgba(247,242,232,0.35)_22%,rgba(247,242,232,0.10)_32%,rgba(247,242,232,0)_42%)]" />
         </div>
 
         <div className="relative z-10 flex min-h-[720px] items-center">
