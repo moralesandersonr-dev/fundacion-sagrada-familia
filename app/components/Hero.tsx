@@ -9,12 +9,12 @@ const notes = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-[#7d9bcd]/10 bg-[#F7F2E8] pt-20 md:pt-24">
-      <div className="mx-auto grid max-w-7xl gap-6 px-5 pb-9 pt-6 md:gap-7 md:px-8 md:pb-14 md:pt-10 lg:min-h-[650px] lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:pb-16 lg:pt-12">
+      <div className="mx-auto grid max-w-7xl gap-6 px-5 pb-9 pt-6 md:gap-7 md:px-8 md:pb-14 md:pt-10 lg:min-h-[650px] lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:pb-16 lg:pt-12">
         <div className="relative z-10">
           <div className="mb-4 flex items-center gap-3 md:mb-6 md:gap-4">
             <span className="h-px w-8 bg-[#C59A2F] md:w-12" />
           </div>
-          <h1 className="max-w-4xl font-[var(--font-playfair)] text-[clamp(2.2rem,5vw,4rem)] font-bold leading-[1] tracking-[-0.02em] text-[#5F84C4] md:text-[clamp(3rem,4vw,4.8rem)]">
+          <h1 className="max-w-none font-[var(--font-playfair)] text-[clamp(2.2rem,5vw,4rem)] font-bold leading-[0.95] tracking-[-0.02em] text-[#5F84C4] md:text-[clamp(3rem,4vw,4.8rem)]">
             Colegio La Sagrada Familia
           </h1>
 
@@ -64,7 +64,7 @@ export default function Hero() {
             src="/images/colegio.jpeg"
             alt="Colegio de la Fundación La Sagrada Familia"
             fill
-            className="object-cover object-center"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(125,155,205,0.02),rgba(125,155,205,0.18))]" />
