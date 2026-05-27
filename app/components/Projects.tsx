@@ -44,7 +44,7 @@ export default function Projects() {
         <div className="mt-7 grid gap-4 md:mt-9 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Proyecto principal */}
           <article className="group relative overflow-hidden rounded-[32px] bg-[#6e8bb8]">
-            <div className="relative aspect-[16/9] w-full">
+            <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/images/vida-globos.jpeg"
                 alt="Escuela de líderes sociales"
@@ -53,11 +53,11 @@ export default function Projects() {
                 sizes="(min-width: 1024px) 56vw, 100vw"
                 className="
                   object-contain
-                  p-2
+                  scale-[1.12]
                   transition
                   duration-700
                   ease-out
-                  group-hover:scale-[1.01]
+                  group-hover:scale-[1.1]
                 "
               />
             </div>
