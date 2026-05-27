@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-[#F7F2E8] pt-20 md:pt-24">
       <div className="relative mx-auto max-w-[1600px] px-4 md:px-6">
         {/* Imagen de fondo derecha */}
-        <div className="absolute inset-y-0 right-0 hidden w-[56%] lg:block">
+        <div className="absolute inset-y-0 right-0 hidden w-[50%] lg:block">
           <Image
             src="/images/colegio.jpeg"
             alt="Colegio de la Fundación La Sagrada Familia"
