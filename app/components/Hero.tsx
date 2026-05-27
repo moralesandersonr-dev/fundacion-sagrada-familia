@@ -17,7 +17,7 @@ export default function Hero() {
             alt="Colegio de la Fundación La Sagrada Familia"
             fill
             priority
-            className="object-cover object-[60%_center]"
+            className="object-cover object-[75%_center]"
           />
 
           {/* Degradado que une texto e imagen */}
