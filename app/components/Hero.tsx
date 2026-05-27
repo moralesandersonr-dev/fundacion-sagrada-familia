@@ -8,89 +8,87 @@ const notes = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-[#7d9bcd]/10 bg-[#F7F2E8] pt-20 md:pt-24">
-      <div className="mx-auto grid max-w-7xl gap-8 px-5 pb-10 pt-6 md:px-8 md:pb-14 md:pt-10 lg:min-h-[700px] lg:grid-cols-[0.55fr_1.45fr] lg:items-center lg:gap-10">
-        <div className="relative z-10">
-          <div className="mb-5 flex items-center gap-3">
-            <span className="h-px w-12 bg-[#C59A2F]" />
-          </div>
-
-          <h1 className="font-[var(--font-playfair)] text-[clamp(2.8rem,4vw,5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-[#5F84C4]">
-            Colegio La Sagrada
-            <br />
-            Familia
-          </h1>
-
-          <p className="mt-3 font-[var(--font-dancing)] text-3xl italic text-[#B8871A] md:text-4xl">
-            Integrar para la vida
-          </p>
-
-          <p className="mt-7 max-w-xl text-base leading-8 text-[#40566B] md:text-xl">
-            Una institución educativa que forma desde la dignidad, la familia,
-            el pensamiento crítico y el servicio al territorio.
-          </p>
-
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="https://wa.me/573143598739"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#7d9bcd] px-6 py-4 text-center text-sm font-black text-white transition hover:opacity-90"
-            >
-              Contactar por WhatsApp
-            </a>
-
-            <a
-              href="#about"
-              className="border border-[#7d9bcd]/20 px-6 py-4 text-center text-sm font-black text-[#7d9bcd] transition hover:bg-white"
-            >
-              Conocer el modelo
-            </a>
-          </div>
-
-          <div className="mt-10 grid gap-4 border-t border-[#7d9bcd]/10 pt-6 md:grid-cols-3">
-            {notes.map((note) => (
-              <div key={note}>
-                <span className="mb-3 block h-1.5 w-1.5 bg-[#C59A2F]" />
-                <p className="text-sm leading-7 text-[#40566B]">{note}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="relative min-h-[320px] overflow-hidden md:min-h-[580px]">
+    <section className="relative overflow-hidden bg-[#F7F2E8] pt-20 md:pt-24">
+      <div className="relative mx-auto max-w-7xl px-5 md:px-8">
+        {/* Imagen de fondo derecha */}
+        <div className="absolute inset-y-0 right-0 hidden w-[58%] lg:block">
           <Image
             src="/images/colegio.jpeg"
             alt="Colegio de la Fundación La Sagrada Familia"
             fill
-            className="object-cover object-top"
             priority
+            className="object-cover object-center"
           />
 
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(247,242,232,0.35)_0%,rgba(247,242,232,0.08)_15%,rgba(255,255,255,0)_30%)]" />
+          {/* Degradado que une texto e imagen */}
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F7F2E8_0%,rgba(247,242,232,0.92)_12%,rgba(247,242,232,0.65)_22%,rgba(247,242,232,0.15)_35%,rgba(247,242,232,0)_50%)]" />
+        </div>
 
-          <div className="absolute bottom-0 left-0 right-0 grid grid-cols-3 bg-[#7d9bcd]/88 text-white backdrop-blur-sm">
-            <div className="border-r border-white/15 p-4">
-              <p className="text-2xl font-black">2027</p>
-              <p className="mt-1 text-xs text-white/80">
-                Propósito grados 10 y 11.
+        <div className="relative z-10 flex min-h-[720px] items-center">
+          <div className="max-w-[540px]">
+            <div className="mb-6 flex items-center gap-4">
+              <span className="h-px w-12 bg-[#C59A2F]" />
+
+              <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#C59A2F]">
+                Colegio La Sagrada Familia
               </p>
             </div>
 
-            <div className="border-r border-white/15 p-4">
-              <p className="text-2xl font-black">2030</p>
-              <p className="mt-1 text-xs text-white/80">
-                Horizonte de jornada única.
-              </p>
+            <h1 className="font-[var(--font-playfair)] text-[clamp(3.5rem,5vw,6rem)] font-semibold leading-[0.92] tracking-[-0.04em] text-[#4F73B8]">
+              Colegio
+              <br />
+              La Sagrada Familia
+            </h1>
+
+            <p className="mt-4 font-[var(--font-dancing)] text-4xl italic text-[#C59016] md:text-5xl">
+              Integrar para la vida
+            </p>
+
+            <p className="mt-8 max-w-lg text-lg leading-9 text-[#40566B]">
+              Una institución educativa que forma desde la dignidad, la
+              familia, el pensamiento crítico y el servicio al territorio.
+            </p>
+
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="https://wa.me/573143598739"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#7D9BCD] px-8 py-4 text-center font-bold text-white transition hover:opacity-90"
+              >
+                Contactar por WhatsApp
+              </a>
+
+              <a
+                href="#about"
+                className="border border-[#7D9BCD]/20 bg-white/40 px-8 py-4 text-center font-bold text-[#7D9BCD] transition hover:bg-white"
+              >
+                Conocer el modelo
+              </a>
             </div>
 
-            <div className="p-4">
-              <p className="text-2xl font-black">PEI</p>
-              <p className="mt-1 text-xs text-white/80">
-                Identidad y modelo educativo.
-              </p>
+            <div className="mt-14 grid grid-cols-3 gap-6 border-t border-[#D9D2C5] pt-8">
+              {notes.map((note) => (
+                <div key={note}>
+                  <span className="mb-3 block h-2 w-2 bg-[#C59A2F]" />
+                  <p className="text-sm leading-7 text-[#40566B]">
+                    {note}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
+
+        {/* Imagen para móvil */}
+        <div className="relative mt-8 h-[420px] overflow-hidden lg:hidden">
+          <Image
+            src="/images/colegio.jpeg"
+            alt="Colegio de la Fundación La Sagrada Familia"
+            fill
+            priority
+            className="object-cover"
+          />
         </div>
       </div>
     </section>
