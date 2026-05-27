@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <PhotoBanner
-        src="/images/vida-globos.jpeg"
+        src="/images/ciencia.jpeg"
         alt="Juego, color y aprendizaje compartido"
         kicker="Vida escolar"
         title="Juego, color y aprendizaje compartido"
