@@ -14,11 +14,11 @@ export default function Hero() {
           <div className="mb-4 flex items-center gap-3 md:mb-6 md:gap-4">
             <span className="h-px w-8 bg-[#C59A2F] md:w-12" />
           </div>
-          <h1 className="max-w-4xl font-[var(--font-playfair)] text-[clamp(2rem,6vw,3.2rem)] font-bold leading-[1.02] tracking-[-0.02em] text-[#5F84C4] md:text-[clamp(2.8rem,4vw,4.2rem)]">
+          <h1 className="max-w-4xl font-[var(--font-playfair)] text-[clamp(2.2rem,5vw,4rem)] font-bold leading-[1] tracking-[-0.02em] text-[#5F84C4] md:text-[clamp(3rem,4vw,4.8rem)]">
             Colegio La Sagrada Familia
           </h1>
 
-          <p className="mt-3 font-[var(--font-dancing)] text-3xl text-[#B8871A] md:text-4xl">
+          <p className="mt-3 font-[var(--font-dancing)] italic text-2xl text-[#B8871A] md:text-3xl">
             Integrar para la vida
           </p>
 
