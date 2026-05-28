@@ -37,10 +37,10 @@ export default function PhotoBanner({
         className={`object-cover transition duration-[1200ms] ease-out group-hover:scale-[1.015] ${objectPosition}`}
         sizes="100vw"
       />
-      <div
+     <div
         className={
           isDark
-            ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(125,155,205,0.86),rgba(125,155,205,0.44),rgba(125,155,205,0.1))]"
+            ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(125,155,205,0.88),rgba(125,155,205,0.72),rgba(125,155,205,0.58))]"
             : "absolute inset-0 bg-[linear-gradient(90deg,rgba(247,242,232,0.95),rgba(247,242,232,0.56),rgba(247,242,232,0.16))]"
         }
       />
