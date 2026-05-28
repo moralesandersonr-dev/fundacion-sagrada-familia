@@ -14,7 +14,7 @@ type PhotoBannerProps = {
 export default function PhotoBanner({
   alt,
   kicker,
-  objectPosition = "object-center",
+  objectPosition = "object-[50%_10%]",
   src,
   text,
   title,
@@ -45,7 +45,7 @@ export default function PhotoBanner({
         }
       />
       <div
-        className={`relative mx-auto flex min-h-[420px] max-w-7xl items-end px-5 py-7 md:px-8 md:py-12 ${
+        className={`relative mx-auto flex min-h-[420px] max-w-7xl items-start px-5 pt-16 pb-8 md:px-8 md:pt-24 md:pb-12 ${
           isFeatured ? "md:min-h-[820px]" : "md:min-h-[720px]"
         }`}
       >
