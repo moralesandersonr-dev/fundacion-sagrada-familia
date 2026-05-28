@@ -14,7 +14,7 @@ type PhotoBannerProps = {
 export default function PhotoBanner({
   alt,
   kicker,
-  objectPosition = "object-[50%_-70%]",
+  objectPosition = "object-bottom"
   src,
   text,
   title,
@@ -34,7 +34,7 @@ export default function PhotoBanner({
         src={src}
         alt={alt}
         fill
-        className={`object-cover transition duration-[1200ms] ease-out group-hover:scale-[1.015] ${objectPosition}`}
+        className={`object-cover object-top transition duration-[1200ms] ease-out group-hover:scale-[1.015] ${objectPosition}`}
         sizes="100vw"
       />
      <div
