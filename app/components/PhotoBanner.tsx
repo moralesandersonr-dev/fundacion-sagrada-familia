@@ -14,7 +14,7 @@ type PhotoBannerProps = {
 export default function PhotoBanner({
   alt,
   kicker,
-  objectPosition = "object-[50%_-40%]",
+  objectPosition = "object-[50%_-70%]",
   src,
   text,
   title,
