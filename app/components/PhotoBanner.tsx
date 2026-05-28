@@ -63,14 +63,14 @@ export default function PhotoBanner({
           >
             {kicker}
           </p>
-          <h2 className="mt-3 text-[clamp(1.75rem,9vw,2.55rem)] font-black leading-tight tracking-[-0.03em] md:mt-4 md:text-[clamp(2.05rem,4vw,3.25rem)]">
+          <h2 className="mt-3 text-[clamp(2.6rem,8vw,5rem)] font-black leading-tight tracking-[-0.03em] md:mt-4 md:text-[clamp(3.2rem,6vw,6rem)]">
             {title}
           </h2>
           <p
             className={
               isDark
-                ? "mt-3 text-sm leading-6 text-white/86 md:mt-4 md:text-lg md:leading-8"
-                : "mt-3 text-sm leading-6 text-[#40566B] md:mt-4 md:text-lg md:leading-8"
+                ? "mt-4 text-sm leading-6 italic text-white/80 md:mt-5 md:text-base md:leading-7"
+                : "mt-4 text-sm leading-6 italic text-[#40566B]/80 md:mt-5 md:text-base md:leading-7"
             }
           >
             {text}
