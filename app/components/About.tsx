@@ -46,16 +46,31 @@ export default function About() {
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid gap-7 lg:grid-cols-[0.76fr_1.24fr] lg:items-start">
-          <aside className="lg:pt-4">
-            <p className="text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#8A6B12] md:text-xs md:tracking-[0.24em]">
-              Proyecto Educativo Institucional
-            </p>
-            <div className="quiet-rule mt-4 h-px w-full max-w-xs opacity-35 md:mt-5" />
-            <p className="mt-4 max-w-sm text-sm leading-7 text-[#40566B] md:mt-6 md:text-base md:leading-8">
-              Una forma de acompañar la vida escolar: familia, aula, barrio,
-              valores y futuro puestos en conversación.
-            </p>
+          <aside className="lg:pt-4 flex flex-col h-full justify-between">
+            <div>
+              <p className="text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#8A6B12] md:text-xs md:tracking-[0.24em]">
+                Proyecto Educativo Institucional
+              </p>
+          
+              <div className="quiet-rule mt-4 h-px w-full max-w-xs opacity-35 md:mt-5" />
+          
+              <p className="mt-4 max-w-sm text-sm leading-7 text-[#40566B] md:mt-6 md:text-base md:leading-8">
+                Una forma de acompañar la vida escolar: familia, aula, barrio,
+                valores y futuro puestos en conversación.
+              </p>
+            </div>
+          
+            <div className="mt-10 flex justify-center lg:justify-start">
+              <div className="rounded-2xl bg-[#FBF8F1]/70 p-5 shadow-[4px_4px_0_#C59A2F]/20">
+                <img
+                  src="/Logo.png"
+                  alt="Logo del colegio"
+                  className="w-44 md:w-56 object-contain opacity-95"
+                />
+              </div>
+            </div>
           </aside>
+
 
           <div>
             <h2 className="max-w-4xl text-[clamp(1.9rem,9vw,2.8rem)] font-black leading-[1] tracking-[-0.03em] text-[#7d9bcd] md:text-[clamp(2.3rem,4.2vw,4.35rem)] md:leading-[0.98]">
