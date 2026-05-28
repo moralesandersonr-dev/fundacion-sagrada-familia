@@ -26,7 +26,7 @@ export default function PhotoBanner({
 
   return (
     <section
-      className={`group relative mx-auto max-w-7xl min-h-[420px] overflow-hidden rounded-[32px] border border-[#7d9bcd]/10 bg-[#7d9bcd] ${
+      className={`group relative mx-auto max-w-[1600px] px-4 md:px-6 min-h-[420px] overflow-hidden rounded-[32px] border border-[#7d9bcd]/10 bg-[#7d9bcd] ${
         isFeatured ? "md:min-h-[820px]" : "md:min-h-[720px]"
       }`}
     >
@@ -45,7 +45,7 @@ export default function PhotoBanner({
         }
       />
       <div
-        className={`relative mx-auto flex min-h-[420px] max-w-7xl items-start px-5 pt-16 pb-8 md:px-8 md:pt-24 md:pb-12 ${
+        className={`relative mx-auto flex min-h-[420px] max-w-[1600px] items-start px-5 pt-16 pb-8 md:px-8 md:pt-24 md:pb-12 ${
           isFeatured ? "md:min-h-[820px]" : "md:min-h-[720px]"
         }`}
       >
