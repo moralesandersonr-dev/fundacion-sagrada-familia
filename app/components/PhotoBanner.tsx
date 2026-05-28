@@ -26,7 +26,7 @@ export default function PhotoBanner({
 
   return (
     <section
-      className={`group relative min-h-[420px] overflow-hidden border-b border-[#7d9bcd]/10 bg-[#7d9bcd] ${
+      className={`group relative mx-auto max-w-7xl min-h-[420px] overflow-hidden rounded-[32px] border border-[#7d9bcd]/10 bg-[#7d9bcd] ${
         isFeatured ? "md:min-h-[820px]" : "md:min-h-[720px]"
       }`}
     >
