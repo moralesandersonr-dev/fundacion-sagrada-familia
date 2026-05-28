@@ -26,8 +26,8 @@ export default function PhotoBanner({
 
   return (
     <section
-      className={`group relative min-h-[260px] overflow-hidden border-b border-[#7d9bcd]/10 bg-[#7d9bcd] ${
-        isFeatured ? "md:min-h-[560px]" : "md:min-h-[420px]"
+      className={`group relative min-h-[420px] overflow-hidden border-b border-[#7d9bcd]/10 bg-[#7d9bcd] ${
+        isFeatured ? "md:min-h-[820px]" : "md:min-h-[720px]"
       }`}
     >
       <Image
@@ -45,8 +45,8 @@ export default function PhotoBanner({
         }
       />
       <div
-        className={`relative mx-auto flex min-h-[260px] max-w-7xl items-end px-5 py-7 md:px-8 md:py-12 ${
-          isFeatured ? "md:min-h-[560px]" : "md:min-h-[420px]"
+        className={`relative mx-auto flex min-h-[420px] max-w-7xl items-end px-5 py-7 md:px-8 md:py-12 ${
+          isFeatured ? "md:min-h-[820px]" : "md:min-h-[720px]"
         }`}
       >
         <div
@@ -57,7 +57,7 @@ export default function PhotoBanner({
           <p
             className={
               isDark
-                ? "text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#D8C17C] md:text-xs md:tracking-[0.24em]"
+                ? "text-sm font-black uppercase tracking-[0.22em] text-[#D8C17C] md:text-base md:tracking-[0.24em]"
                 : "text-[0.68rem] font-black uppercase tracking-[0.22em] text-[#8A6B12] md:text-xs md:tracking-[0.24em]"
             }
           >
