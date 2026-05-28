@@ -14,7 +14,7 @@ type PhotoBannerProps = {
 export default function PhotoBanner({
   alt,
   kicker,
-  objectPosition = "object-[50%_2%]",
+  objectPosition = "object-[50%_-20%]",
   src,
   text,
   title,
@@ -26,7 +26,7 @@ export default function PhotoBanner({
 
   return (
     <section
-      className={`group relative mx-auto max-w-[1600px] px-4 md:px-6 min-h-[420px] overflow-hidden rounded-[32px] border border-[#7d9bcd]/10 bg-[#7d9bcd] ${
+      className={`group relative mx-auto w-full min-h-[420px] overflow-hidden border border-[#7d9bcd]/10 bg-[#7d9bcd] ${
         isFeatured ? "md:min-h-[820px]" : "md:min-h-[720px]"
       }`}
     >
