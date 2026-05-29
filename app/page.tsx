@@ -34,7 +34,7 @@ export default function Home() {
       />
       <EducationalModel />
       <PhotoBanner
-        src="/images/vida-arcoiris.jpeg"
+        src="/images/entorno.jpeg"
         alt="Naturaleza y entorno institucional"
         kicker="Entorno institucional"
         title="Un paisaje que también educa"
