@@ -63,7 +63,7 @@ export default function About() {
             <div className="mt-10 flex justify-center lg:justify-start">
               <div className="rounded-2xl bg-[#FBF8F1]/70 p-5 shadow-[4px_4px_0_#C59A2F]/20">
                 <img
-                  src="/Logo.png"
+                  src="/images/Logo.png"
                   alt="Logo del colegio"
                   className="w-44 md:w-56 object-contain opacity-95"
                 />
