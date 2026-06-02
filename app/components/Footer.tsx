@@ -79,14 +79,14 @@ export default function Footer() {
               href="https://wa.me/573143598739"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex bg-[#C59A2F] px-5 py-3 text-sm font-black text-[#7d9bcd] transition hover:bg-[#D8C17C] md:mt-6"
+              className="mt-5 inline-flex rounded-lg bg-[#C59A2F] px-5 py-3 text-sm font-black text-[#40566B] transition hover:bg-[#D8C17C] md:mt-6"
             >
               Escribir por WhatsApp
             </a>
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-2 border-t border-white/12 pt-5 text-xs text-[#9AB0C8] md:mt-10 md:flex-row md:items-center md:justify-between md:pt-6 md:text-sm">
+        <div className="mt-8 flex flex-col gap-2 border-t border-white/12 pt-5 text-xs text-[#C7D6EA] md:mt-10 md:flex-row md:items-center md:justify-between md:pt-6 md:text-sm">
           <p>© {new Date().getFullYear()} Todos los derechos reservados.</p>
           <p>Fundación La Sagrada Familia</p>
         </div>

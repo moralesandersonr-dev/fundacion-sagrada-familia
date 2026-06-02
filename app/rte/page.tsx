@@ -15,7 +15,7 @@ const descriptions: Record<string, string> = {
   "Estatutos FLSF 2022.pdf":
     "Estatutos institucionales actualizados para consulta pública.",
   "RUT FUNDACION 30 ABRIL 2026.pdf":
-    "Registro �anico Tributario con fecha de corte abril de 2026.",
+    "Registro Único Tributario con fecha de corte abril de 2026.",
 };
 
 function formatBytes(bytes: number) {
@@ -36,7 +36,9 @@ function prettyName(file: string) {
 
 async function getDocuments() {
   const entries = await readdir(rteDirectory);
-  const pdfs = entries.filter((entry) => entry.toLowerCase().endsWith(".pdf"));
+  const pdfs = entries
+    .filter((entry) => entry.toLowerCase().endsWith(".pdf"))
+    .sort((first, second) => first.localeCompare(second, "es"));
 
   return Promise.all(
     pdfs.map(async (file) => {
@@ -62,11 +64,11 @@ export default async function RtePage() {
       <Navbar />
 
       <section className="border-b border-[#7d9bcd]/10 pt-20 md:pt-24">
-        <div className="mx-auto grid max-w-7xl gap-6 px-5 py-10 md:gap-8 md:px-8 md:py-14 lg:grid-cols-[0.55fr_1fr] lg:items-end">
+        <div className="mx-auto grid max-w-7xl gap-6 px-5 py-10 sm:px-6 md:gap-8 md:px-8 md:py-14 lg:grid-cols-[0.55fr_1fr] lg:items-end">
           <aside>
             <Link
               href="/"
-              className="inline-flex border border-[#7d9bcd]/18 px-4 py-2 text-sm font-bold text-[#7d9bcd] transition hover:bg-white"
+              className="inline-flex rounded-lg border border-[#7d9bcd]/18 px-4 py-2 text-sm font-bold text-[#4F73B8] transition hover:bg-white"
             >
               Volver al inicio
             </Link>
@@ -77,7 +79,7 @@ export default async function RtePage() {
           </aside>
 
           <div>
-            <h1 className="max-w-4xl text-[clamp(2.1rem,10vw,3.25rem)] font-black leading-[0.98] tracking-[-0.04em] text-[#7d9bcd] md:text-[clamp(2.7rem,5vw,5.2rem)] md:leading-[0.94]">
+            <h1 className="max-w-4xl text-[clamp(2.1rem,10vw,3.25rem)] font-black leading-[0.98] text-[#4F73B8] md:text-[clamp(2.7rem,5vw,5.2rem)] md:leading-[0.94]">
               Régimen Tributario Especial
             </h1>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[#40566B] md:mt-6 md:text-lg md:leading-8">
@@ -94,32 +96,32 @@ export default async function RtePage() {
             {documents.map((document, index) => (
               <article
                 key={document.file}
-                className="grid gap-4 border-b border-[#7d9bcd]/14 py-5 md:grid-cols-[0.16fr_1fr_0.36fr] md:items-center md:gap-5 md:py-6"
+                className="grid gap-4 border-b border-[#7d9bcd]/14 py-5 lg:grid-cols-[0.16fr_1fr_0.36fr] lg:items-center lg:gap-5 lg:py-6"
               >
                 <p className="font-mono text-xs text-[#8A6B12] md:text-sm">
                   {String(index + 1).padStart(2, "0")} / {document.size}
                 </p>
                 <div>
-                  <h2 className="text-xl font-black leading-tight text-[#7d9bcd] md:text-2xl">
+                  <h2 className="text-xl font-black leading-tight text-[#4F73B8] md:text-2xl">
                     {document.title}
                   </h2>
                   <p className="mt-2 max-w-2xl text-sm leading-6 text-[#5F6F7F] md:text-base md:leading-7">
                     {document.description}
                   </p>
                 </div>
-                <div className="grid grid-cols-2 gap-2 md:flex md:justify-end md:gap-3">
+                <div className="grid grid-cols-2 gap-2 sm:flex sm:justify-start sm:gap-3 lg:justify-end">
                   <a
                     href={document.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#7d9bcd] px-4 py-3 text-center text-xs font-black uppercase tracking-[0.08em] text-white md:px-5 md:text-sm"
+                    className="rounded-lg bg-[#4F73B8] px-4 py-3 text-center text-xs font-black uppercase tracking-[0.08em] text-white md:px-5 md:text-sm"
                   >
                     Ver
                   </a>
                   <a
                     href={document.href}
                     download
-                    className="border border-[#7d9bcd]/18 px-4 py-3 text-center text-xs font-black uppercase tracking-[0.08em] text-[#7d9bcd] hover:bg-white md:px-5 md:text-sm"
+                    className="rounded-lg border border-[#7d9bcd]/18 px-4 py-3 text-center text-xs font-black uppercase tracking-[0.08em] text-[#4F73B8] hover:bg-white md:px-5 md:text-sm"
                   >
                     Descargar
                   </a>
