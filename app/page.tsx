@@ -24,7 +24,7 @@ export default function Home() {
       />
       <About />
       <PhotoBanner
-        src="/images/vida-aula.jpeg"
+        src="/images/Aula_viva.jpeg"
         alt="Participación y expresión en el aula"
         kicker="Aula viva"
         title="Participación y expresión en el aula"
@@ -34,14 +34,13 @@ export default function Home() {
       />
       <EducationalModel />
       <PhotoBanner
-        src="/images/entorno.jpeg"
+        src="/images/Entorno_Institucional.jpeg"
         alt="Naturaleza y entorno institucional"
         kicker="Entorno institucional"
         title="Un paisaje que también educa"
         text="Zonas verdes, cielo abierto y senderos escolares como parte de una experiencia formativa humana."
-        objectPosition="object-[50%_82%]"
         tone="dark"
-        variant="featured"
+        variant="portrait"
       />
       <InstitutionalLife />
       <PhotoBanner
@@ -55,12 +54,12 @@ export default function Home() {
       />
       <Projects />
       <PhotoBanner
-        src="/images/vida-aros.jpeg"
+        src="/images/Aprender_haciendo.jpeg"
         alt="Retos pedagógicos en espacios naturales"
         kicker="Aprender haciendo"
         title="Retos pedagógicos en espacios naturales"
         text="Moverse, coordinar, guiar y cooperar: el aprendizaje también ocurre fuera del pupitre."
-        objectPosition="object-[50%_32%]"
+        objectPosition="object-[50%_42%]"
         tone="dark"
       />
       <Footer />

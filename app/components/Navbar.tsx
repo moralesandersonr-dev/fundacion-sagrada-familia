@@ -93,9 +93,9 @@ export default function Navbar() {
           href="https://wa.me/573143598739"
           target="_blank"
           rel="noopener noreferrer"
-          className={`hidden rounded-full text-sm font-black transition md:inline-flex ${
+          className={`hidden items-center justify-center rounded-full text-sm font-black transition md:inline-flex ${
             scrolled
-              ? "bg-[#C59A2F] px-4 py-2 text-[#7d9bcd] hover:bg-[#D8C17C]"
+              ? "border border-[#D8C17C]/70 bg-[#F7F2E8] px-4 py-2 text-[#40566B] shadow-[0_8px_20px_rgba(64,86,107,0.16)] ring-1 ring-white/45 hover:bg-[#D8C17C] hover:text-[#40566B]"
               : "bg-[#7d9bcd] px-5 py-2.5 text-white hover:bg-[#7d9bcd]"
           }`}
         >
