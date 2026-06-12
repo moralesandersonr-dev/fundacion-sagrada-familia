@@ -72,7 +72,7 @@ export default function Footer() {
               </p>
               <p>
                 <span className="font-black text-white">Ubicación:</span>{" "}
-                Medellín, Antioquia
+                Cll 63a # 122-55 San Cristóbal, Medellín, Antioquia
               </p>
             </div>
             <a
