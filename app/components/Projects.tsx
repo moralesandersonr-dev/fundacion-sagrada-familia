@@ -19,8 +19,8 @@ type ProjectCard = {
 const projects: ProjectCard[] = [
   {
     image: "/images/vida-globos.jpeg",
-    alt: "Escuela de líderes sociales",
-    title: "Escuela de líderes sociales",
+    alt: "Escuela de formación líderes sociales",
+    title: "Escuela de formación líderes sociales",
     description:
       "Espacios de participación donde los estudiantes aprenden a servir, proponer y construir comunidad.",
     position: "object-[50%_44%]",
@@ -28,7 +28,7 @@ const projects: ProjectCard[] = [
   {
     image: "/images/aman-la-vida.jpeg",
     alt: "Los niños, las niñas y adolescentes aman la vida en la escuela",
-    title: "Aman la vida en la escuela",
+    title: "Los niños, las niñas y adolescentes aman la vida en la escuela",
     description:
       "Experiencias que fortalecen el cuidado, la alegría y el sentido de pertenencia por la institución.",
     position: "object-[50%_46%]",
