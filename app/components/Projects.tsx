@@ -62,12 +62,20 @@ const projects: ProjectCard[] = [
 function ProjectImageCard({
   index,
   project,
+  featured = false,
 }: {
   index: number;
   project: ProjectCard;
+  featured?: boolean;
 }) {
   return (
-    <article className="group relative isolate flex aspect-square overflow-hidden rounded-lg bg-[#7d9bcd] shadow-[0_14px_34px_rgba(125,155,205,0.24)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_44px_rgba(125,155,205,0.34)]">
+    <article
+      className={`group relative isolate flex overflow-hidden rounded-lg bg-[#7d9bcd]
+      shadow-[0_14px_34px_rgba(125,155,205,0.24)]
+      transition duration-300 hover:-translate-y-1
+      hover:shadow-[0_20px_44px_rgba(125,155,205,0.34)]
+      ${featured ? "aspect-[1/1.15]" : "aspect-square"}`}
+    >
       <Image
         src={project.image}
         alt={project.alt}
@@ -77,7 +85,11 @@ function ProjectImageCard({
       />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,31,55,0.06)_0%,rgba(20,31,55,0.3)_42%,rgba(20,31,55,0.9)_100%)] transition duration-300 group-hover:bg-[linear-gradient(180deg,rgba(20,31,55,0.02)_0%,rgba(20,31,55,0.22)_36%,rgba(20,31,55,0.88)_100%)]" />
       <div className="relative z-10 flex min-h-full w-full flex-col justify-end p-4 text-white sm:p-5">
-        <p className="mb-2 font-mono text-xs font-bold text-[#D8C17C] lg:mb-3">
+        <p
+          className={`mb-2 font-mono font-bold text-[#D8C17C] lg:mb-3 ${
+            featured ? "text-base md:text-lg" : "text-xs"
+          }`}
+        >
           {String(index).padStart(2, "0")}
         </p>
         <h3 className="text-lg font-black leading-tight md:text-xl">
