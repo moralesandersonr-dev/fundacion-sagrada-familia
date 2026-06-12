@@ -12,10 +12,15 @@ const rteDirectory = path.join(process.cwd(), "RTE");
 const descriptions: Record<string, string> = {
   "Acta de constitución de la fundación.pdf":
     "Documento de constitución de la Fundación La Sagrada Familia.",
+
   "Estatutos FLSF 2022.pdf":
     "Estatutos institucionales actualizados para consulta pública.",
+
   "RUT FUNDACION 30 ABRIL 2026.pdf":
     "Registro Único Tributario con fecha de corte abril de 2026.",
+
+  "Acta regimen tributario especial.pdf":
+    "Acta del Régimen Tributario Especial para consulta pública.",
 };
 
 function formatBytes(bytes: number) {
