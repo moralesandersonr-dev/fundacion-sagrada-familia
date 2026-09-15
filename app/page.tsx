@@ -1,5 +1,4 @@
 import About from "./components/About";
-import Documents from "./components/Documents";
 import EducationalModel from "./components/EducationalModel";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -26,8 +25,6 @@ export default function Home() {
       />
 
       <About />
-
-      <Documents />
 
       <PhotoBanner
         src="/images/Aula_viva.jpeg"
