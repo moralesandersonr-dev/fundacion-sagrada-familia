@@ -18,28 +18,28 @@ const documents: DocumentItem[] = [
     title: "Cartilla práctica SIEE",
     description:
       "Conoce las orientaciones y criterios del Sistema Institucional de Evaluación de los Estudiantes.",
-    href: "/documentos/cartilla-practica-siee.pdf",
+    href: "/images/documentos/cartilla-practica-siee.pdf",
     Icon: Scale,
   },
   {
     title: "Cartilla práctica Proyecto Educativo Institucional",
     description:
       "Conoce los principios, fundamentos y orientaciones que dan identidad al Proyecto Educativo Institucional.",
-    href: "/documentos/cartilla-practica-proyecto-educativo-institucional.pdf",
+    href: "/images/documentos/cartilla-practica-proyecto-educativo-institucional.pdf",
     Icon: BookOpen,
   },
   {
     title: "Cartilla práctica Modelo Educativo",
     description:
       "Conoce el modelo educativo que orienta nuestra propuesta de formación integral.",
-    href: "/documentos/cartilla-practica-modelo-educativo.pdf",
+    href: "/images/documentos/cartilla-practica-modelo-educativo.pdf",
     Icon: GraduationCap,
   },
   {
     title: "Cartilla práctica Manual de Convivencia",
     description:
       "Consulta los principios, acuerdos y orientaciones que favorecen la convivencia de nuestra comunidad educativa.",
-    href: "/documentos/cartilla-practica-manual-de-convivencia.pdf",
+    href: "/images/documentos/cartilla-practica-manual-de-convivencia.pdf",
     Icon: HeartHandshake,
   },
 ];
