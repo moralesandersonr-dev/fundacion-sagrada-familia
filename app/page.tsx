@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Documents from "./components/Documents";
 import EducationalModel from "./components/EducationalModel";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#F7F2E8]">
       <Navbar />
       <Hero />
+
       <PhotoBanner
         src="/images/ciencia.jpeg"
         alt="Juego, color y aprendizaje compartido"
@@ -22,7 +24,11 @@ export default function Home() {
         objectPosition="object-[50%_38%]"
         tone="dark"
       />
+
       <About />
+
+      <Documents />
+
       <PhotoBanner
         src="/images/Aula_viva.jpeg"
         alt="Participación y expresión en el aula"
@@ -32,7 +38,9 @@ export default function Home() {
         objectPosition="object-[50%_45%]"
         tone="light"
       />
+
       <EducationalModel />
+
       <PhotoBanner
         src="/images/Entorno_Institucional.jpeg"
         alt="Naturaleza y entorno institucional"
@@ -42,7 +50,9 @@ export default function Home() {
         tone="dark"
         variant="portrait"
       />
+
       <InstitutionalLife />
+
       <PhotoBanner
         src="/images/vida-sistemas.jpeg"
         alt="Exploración digital y trabajo colaborativo"
@@ -52,7 +62,9 @@ export default function Home() {
         objectPosition="object-[48%_42%]"
         tone="light"
       />
+
       <Projects />
+
       <PhotoBanner
         src="/images/Aprender_haciendo.jpeg"
         alt="Retos pedagógicos en espacios naturales"
@@ -62,6 +74,7 @@ export default function Home() {
         objectPosition="object-[50%_42%]"
         tone="dark"
       />
+
       <Footer />
       <WhatsAppButton />
     </main>
